@@ -10,12 +10,10 @@ Tag dependencies are managed via [npm](https://www.npmjs.com/). Go ahead and dow
 
 ## Playing With Your Tag
 
-Install superstatic if you don't have.
-
-    npm install -g superstatic
-
-And you can run it via:
-
-    superstatic
+    npm run demo
 		
 Once running, you can preview your tag at `http://localhost:3474/demo/`
+
+## Testing Your Tag
+
+    npm test
