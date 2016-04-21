@@ -17,18 +17,18 @@ describe('<seed-tag>', function() {
 		tag.unmount()
 	})
 
-  it('should be ok', function() {
+	it('should be ok', function() {
 		expect(tag).to.be.ok
 		expect(tag.isMounted).to.be.true
-  })
+	})
 
 	it('should have default title', function() {
 		expect(title.textContent).to.be.equal('seed-tag')
-  })
+	})
 
 	it('should have button disabled', function() {
 		expect(button.disabled).to.be.true
-  })
+	})
 
 	it('should enable/disable button when text is inputted', function() {
 		tag.edit(e)
@@ -41,7 +41,7 @@ describe('<seed-tag>', function() {
 		tag.update()
 
 		expect(button.disabled).to.be.true
-  })
+	})
 
 	it('should add item to list when add button is pressed', function() {
 		var item = {title: e.target.value}
@@ -54,7 +54,7 @@ describe('<seed-tag>', function() {
 
 		expect(tag.items.length).to.be.equal(1)
 		expect(tag.items[0]).to.be.deep.equal(item)
-  })
+	})
 
 	it('should set item as done when box is checked', function() {
 		var item = {title: e.target.value}
@@ -74,5 +74,5 @@ describe('<seed-tag>', function() {
 
 		expect(item.done).to.be.false
 		expect(check.checked).to.be.false
-  })
+	})
 })

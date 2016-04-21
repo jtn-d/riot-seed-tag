@@ -4,8 +4,9 @@
   "description": "A custom tag providing starting point for your own reusable Riot tags.",
   "main": "seed-tag.js",
   "scripts": {
-    "demo": "riot *.tag && superstatic",
-    "test": "karma start"
+    "demo": "superstatic",
+		"watch": "riot *.tag && karma start",
+    "test": "karma start --single-run"
   },
   "keywords": [
     "riot",
